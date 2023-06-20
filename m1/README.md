@@ -5,4 +5,6 @@ dockerfile - полученный dockerfile
 log.png - лог выполнения сборки
 
 Сборка контейнера:
+docker build -t netology-ml:netology-ml -f 
+
 docker build контейнер с тегом netology-ml:netology-ml
