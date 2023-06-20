@@ -7,4 +7,4 @@ ADD --chmod=755 https://raw.githubusercontent.com/adtitovich/mlop-11/main/m1/1.s
 RUN pip install --no-cache-dir --upgrade pip \
   && pip install --no-cache-dir mlflow boto3 pymysql
 # запускаем на вывод файл 1.sh
-CMD ["/1.sh"]
+RUN bash 1.sh
