@@ -1,7 +1,7 @@
 #Задание к занятию «Docker и микросервисная архитектура»
 
 1.sh - скрипт, который выводит надпись “Hello Netology”<br>
-dockerfile - полученный dockerfile<br>
+Dockerfile - полученный dockerfile<br>
 log.png - лог выполнения сборки<br>
 
 Сборка контейнера:<br>
