@@ -26,3 +26,30 @@
 ● внутри него сервер приложений tomcat версии 8.5.69 с портом 8080<br> 
 ● наличие 2 реплик<br> 
 ● использование стратегии rollingupdate**<br>
+```
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: netology-ml
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-tomcat
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: my-tomcat
+    scec:
+      containers:
+      - name: my-tomcat
+        image: tomcat:8.5.69
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+```
