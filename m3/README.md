@@ -15,4 +15,4 @@
 > hosts - inventory<br>
 > homework.yaml, groups_users.yml - playbooks<br>
 > Dockerfile - для образа Ubuntu с Openssh<br>
-> relult.png - скрин результата выполнения playbook<br>
+> result.png - скрин результата выполнения playbook<br>
