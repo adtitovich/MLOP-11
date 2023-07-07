@@ -11,3 +11,8 @@
 7. Использование update<br>
 8. Копирование текстового файла test.txt<br>
 9. Создание в цикле групп пользователей devops_1, test_1 с созданием пользователей и директорий home devops_1, test_1<br>
+
+> hosts - inventory<br>
+> homework.yaml, groups_users.yml - playbooks<br>
+> Dockerfile - для образа Ubuntu с Openssh<br>
+> relult.png - скрин результата выполнения playbook<br>
