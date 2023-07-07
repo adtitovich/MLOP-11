@@ -1,0 +1,37 @@
+- name: netology-ml
+  hosts: all
+  become: yes
+
+  vars:
+    packages:
+      - net-tools
+      - git
+      - tree
+      - htop
+      - mc
+      - vim
+
+  tasks:
+  - name: Task ping
+    ping:
+
+  - name: Task apt update
+    ansible.builtin.apt:
+      update_cache: yes
+
+  - name: Installing package
+    ansible.builtin.apt:
+      name: "{{packages}}"
+      state: latest
+
+  - name: Copy File
+    ansible.builtin.get_url:
+      url: https://raw.githubusercontent.com/adtitovich/mlop-11/main/m3/test.txt
+      dest: /home/ansible/test.txt
+      mode: 0777
+
+  - name: create groups, users and directories
+    include_tasks: groups_users.yml
+    loop:
+    - { name: 'devops_1', group: 'devops_1', homedir: 'devops_1'}
+    - { name: 'test_1', group: 'test_1', homedir: 'test_1'}
