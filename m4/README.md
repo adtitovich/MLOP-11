@@ -1,14 +1,19 @@
-Домашняя работа к занятию “ CI/CD”
-Цель задания
-Научиться пользоваться инструментом CI/CD GitlabCI, который позволит погрузиться в процесс автоматизации посредством написания рабочего playbook.
+# Домашняя работа к занятию “ CI/CD”
 
-Задание:
-Сделать playbook .gitlab-ci.yaml по следующим критериям:
-Используем в тасках tag - netology
-Шаги - build, test
-В билде должен выполняться скрипт из шагов:
-начало Building
-создание папки build
-создание файла в этой папке info.txt В тесте:
-выводим Testing
-проверяем наличие файла info.txt в папке build
+# Задание:
+Сделать playbook .gitlab-ci.yaml по следующим критериям:<br>
+1. Используем в тасках tag - netology<br>
+2. Шаги - build, test<br>
+3. В билде должен выполняться скрипт из шагов:<br>
+ - начало Building<br>
+ - создание папки build<br>
+ - создание файла в этой папке info.txt<br>
+4. В тесте:<br>
+ - выводим Testing<br>
+ - проверяем наличие файла info.txt в папке build<br>
+
+
+> hosts - inventory<br>
+> homework.yaml, groups_users.yml - playbooks<br>
+> Dockerfile - для образа Ubuntu с Openssh<br>
+> result.png - скрин результата выполнения playbook<br>
