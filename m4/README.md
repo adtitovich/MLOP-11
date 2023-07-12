@@ -13,7 +13,5 @@
  - проверяем наличие файла info.txt в папке build<br>
 
 
-> hosts - inventory<br>
-> homework.yaml, groups_users.yml - playbooks<br>
-> Dockerfile - для образа Ubuntu с Openssh<br>
+> gitlab-ci.yml - playbook<br>
 > result.png - скрин результата выполнения playbook<br>
